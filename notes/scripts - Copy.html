@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang=''>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+   <style type="text/css">
+   .notesbody {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size: 18px;
+	color: #3F3F3F;
+	height: 400px;
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+	   
+	   
+	   
+	   @import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700); 
+body{
+background:#ddd;
+}
+sup{
+  top:-.4em;
+}
+.pricing-container{
+  width: 300px;
+  text-align:center;
+  font-family:'Open Sans Condensed', sans-serif;
+  position:absolute;
+  margin-left:-150px;
+  left:50%;
+  bottom:0;
+  .header{
+    background:#2F2F2F;
+    color:white;
+    padding:25px;
+    font-size:2.5em;
+    font-weight:300;
+    border-radius:5px 5px 0 0;
+  }
+  .price{
+    background: #66D2AC;
+    background:linear-gradient(10deg, #93DA9F 30%, #66D2AC 80%);
+    color:white;
+    padding:10px;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.4);
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    font-size:1.3em;
+    .figure{
+    font-weight:800;
+      font-size:1.2em;
+      margin:0 2px;
+    }
+    .cent{
+      text-decoration:underline;
+    }
+    .frequency{
+      color:#2F757F;
+      text-shadow:none;
+    }
+    &:hover .details{
+      height:20px;
+    }
+    .details{
+      color:#2F757F;
+      font-size:.6em;
+      display:block;
+      height:0;
+      overflow:hidden;
+      transition: all 400ms ease;
+    }
+  }
+  .itemsWrapper{
+    border:1px solid #E6E6E6;
+    border-top:none;
+    border-radius:0 0 2px 2px;
+    background:white;
+    box-shadow: inset 14px 0 white, inset 15px 0 #f2f2f2, inset -14px 0 white, inset -15px 0 #f2f2f2;
+    .items{
+      list-style:none;
+      padding:15px;
+      margin:0;
+    }
+    .item{
+      padding:7px;
+      text-transform:capitalize;
+    }
+  }
+}
+	   
+	   
+   .logo {
+	background-image: url(imgs/sukafunlogo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-top: 124px;
+}
+   </style>
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>SUKAFUN Notes</title>
+</head>
+<body>
+<div class="logo"></div>
+
+<div id='cssmenu'>
+<ul>
+   <li><a href='index.html'>Home</a></li>
+   <li class='active'><a href='scripts.html'>Scripts</a></li>
+   <li><a href='microsoft.html'>Microsoft</a></li>
+   <li><a href='linux.html'>Linux</a></li>
+   <li><a href='vmware.html'>VMware</a></li>
+   <li><a href='networks.html'>Networks</a></li>
+   <li><a href='home_lab.html'>Home Lab</a></li>
+   <li><a href='clients.html'>Clients</a></li>
+ </ul>
+</div>
+<div class="notesbody"><table width="800" border="1" >
+  <tbody>
+    <tr>
+      <th scope="col">&nbsp;</th>
+    </tr>
+    <tr>
+      <td>- Schedule reboot RDS depends on day of the week</td>
+    </tr>
+    <tr>
+      <td>- Receive an email if a computer is down for 2 mins</td>
+    </tr>
+    <tr>
+      <td>- Receive an email to report uptime of a computer</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<div class="pricing-container">
+  <div class="header">
+    Premium
+  </div>
+  <div class="price">
+    <span>
+      <sup class="currency">$</sup><span class="figure">39</span> <sup class="cent">99</sup> <sup class="frequency">monthly</sup>
+    </span>
+    <div class='details'>based on 1 yr</div>
+  </div>
+<div class="itemsWrapper">
+  <ul class="items">
+    <li class='item'>Full Access</li>
+    <li class="item"><b>Unlimited</b> Pizza</li>
+    <li class="item"><b>Free</b> Beer</li>
+        <li class="item">2 free forks every months</li>
+    <li class="item"><b>Unlimited</b> Burger</li>
+    <li class="item"><b>Daft Punk</b> every evenings</li>
+
+    <li class="item"><b>Free</b> domain name</li>
+  </ul>
+</div>
+</div>
+</div>
+
+
+</body>
+<html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>	
+<meta name="Welcome to SUKAFUN" content="Welcome to my personal website www.sukafun.com">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<title>SUKAFUN</title>
+
+<style type="text/css">
+@import url("webfonts/KOMIKAX/stylesheet.css");
+
+
+
+
+
+body {
+	background-image: url(imgs/bg.fw.png);
+	background-attachment: fixed;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+#devicesTxt {
+	width: 100%;
+	padding-left: 15px;
+	padding-top: 12px;
+	text-align: left;
+	color: #666;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.animBlock {
+  display: inline-block;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: relative;
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+}
+.animBlock[data-position="left"] { left: -20%; }
+.animBlock[data-position="right"] { right: -20%; }
+
+.animBlock[data-position="left"].viewed {
+  left: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.animBlock[data-position="right"].viewed {
+  right: 0%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.color-1 {
+}
+
+
+
+.blueline {
+	background-color: #0091D8;
+	height: 6px;
+	font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.insidefacts {
+}
+ 
+.firstdiv {
+	height: 100vh;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	width: auto;
+}
+
+.topbar {
+	background-image: url(imgs/topbar.fw.png);
+	background-repeat: repeat-x;
+	height: 4px;
+}
+.topbar2 {
+	background-image: url(imgs/topbar.fw.png);
+	background-repeat: repeat-x;
+	height: 6px;
+}
+.sukafun {
+	height: 115px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+.notweb {
+	height: 102px;
+}
+.seconddiv {
+	height: 100%;
+	background-image: url(imgs/2bg.fw.png);
+	width: 100%;
+	background-position: center center;
+	background-repeat: repeat;
+}
+
+.aboutmefont {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 40px;	
+}
+.whatido {
+	font-family: "Arial Black", Gadget, sans-serif;
+	text-align: center;
+	font-size: 40px;
+	color: #333333;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-weight: 700;
+}
+.thridblue {
+	height: 100%;
+	background-image: url(imgs/footer_lodyas.png);
+	background-position: center center;
+	padding-bottom: 15px;
+}
+.arrow {
+	background-image: url(imgs/arrow.fw.png);
+	height: 31px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 29px;
+}
+.aboutmetrans {
+	background-color: #FFF;
+	height: 650px;
+		margin-left: auto;
+			margin-right: auto;
+}
+.insidefacts {
+	height: 220px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #FFF;
+}
+.aboutmetext {
+	font-size: 20px;
+}
+.lastdiv {
+	height: 33px;
+	padding-top: 50px;
+	padding-bottom: 73px;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.lastdivtext {
+	color: #333;
+	width: 50%;
+	font-size: 14px;
+	padding-top: 12px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-bottom: 10px;
+	font-family: "Courier New", Courier, monospace;
+}
+.coded {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: #0CF;
+}
+.hosted {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: #F77;
+}
+.designed {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: #FF9;
+}
+.lastdivfb {
+	height: 33px;
+width: 33px;
+	
+	
+	background-image: url(imgs/facebook.png);
+	opacity: 0.7; 
+}
+.lastdivfb:hover { 
+  opacity: 1; 
+}
+.lastdivin {
+	height: 33px;
+	width: 33px;
+	
+
+	background-image: url(imgs/instagram.png);
+	opacity: 0.7; 
+}
+.lastdivin:hover { 
+  opacity: 1; 
+}
+.lastdivins {
+	height: 33px;
+width: 33px;
+	
+	
+	
+	background-image: url(imgs/linkdin.png);
+	opacity: 0.7; 
+}
+.lastdivins:hover { 
+  opacity: 1; 
+}
+.menu {
+	height: 50px;
+	color: #FFF;
+	font-family: 'Roboto Condensed';
+	font-size: 19px;
+	width: auto;
+	line-height: 25px;
+	padding-left: 15px;
+	vertical-align: middle;
+	margin-left: 0px;
+	padding-top: 2px;
+	background-color: #000;
+	position: fixed;
+}
+.lastdivhot {
+	height: 33px;
+	width: 33px;
+
+	
+	background-image: url(imgs/hotmail.png);
+	opacity: 0.7; 
+}
+.lastdivhot:hover { 
+  opacity: 1; 
+    
+}
+.aboutmetextdiv {
+	font-family: "Courier New", Courier, monospace;
+	height: 600px;
+	background-color: #FFF;
+	padding-top: 60px;
+	padding-right: 10%;
+	padding-left: 10%;
+	text-align: center;
+	}
+.sukafunlibrary {
+	height: 33px;
+	width: 133px;
+	opacity: 0.7;
+	background-image: url(imgs/sukafunworld..png);	
+}
+.sukafunlibrary:hover { 
+  opacity: 1; 
+    
+}
+
+.aboutmefinal {
+	height: 680px;
+position: absolute; 
+bottom: 0;
+
+}
+
+.firstabout {
+	float: right;
+	background-image: url(imgs/myphoto.png);
+	height: 280px;
+	width: 460px;
+	text-align: center;
+}
+.aboutsecond {
+	height: 300px;
+	width: 500px;
+	color: #666;
+	float: left;
+	margin-left: 65px;
+}
+
+
+
+.move {
+	width: 200px;
+	position: fixed;
+	height: 200px;
+	background-color: #06F;
+}
+.linedown {
+	background-image: url(imgs/lline.fw.png);
+	height: 2px;
+	width: 100%;
+	background-repeat: repeat-x;
+	padding-bottom: 10px;
+	background-position: top;
+}
+.getintouchdiv {
+	background-size: 100% auto;
+	overflow: visible;
+	font-family: 'Roboto Condensed';
+	font-size: 40px;
+}
+.getintouch {
+	font-size: 40px;
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: 700;
+}
+.ilivehere {
+	height: 271px;
+	float: left;
+	width: auto;
+	font-size: 30px;
+	color: #000;
+	text-align: right;
+	text-transform: uppercase;
+	font-style: normal;
+	line-height: 39px;
+}
+.getintouchrow2 {
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.middelgapdiv {
+	background-color: #39C;
+	width: 100px;
+	float: left;
+}
+
+
+.glympse {
+	height: 300px;
+	width: 500px;
+}
+firstaboutrowimg {
+	margin-right: 20%;
+	margin-left: 20%;
+	padding-bottom: 45px;
+}
+.whatidotext {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 22px;
+	color: #000000;
+	text-align: center;
+	padding-right: 150px;
+	padding-left: 150px;
+	line-height: 35px;
+	text-decoration: blink;
+}
+.whatidotextstyle {
+	font-family: "Courier New", Courier, monospace;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 	normal;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 15px;
+}
+
+.resume {
+	font-size: 20px;
+	color: #0085B2;
+	text-align: center;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-bottom: 50px;
+}
+.resume a:link { color:#000000; text-decoration: none; font-weight:bold }
+.resume a:hover { text-decoration:none; font-weight:bold; }
+
+
+.iconstext {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 20px;
+	color: #FFF;
+
+	font-weight: bold;
+}
+.skills {
+	width: auto;
+	float: left;
+	padding-right: 8px;
+}
+.skypediv {
+	text-align: center;
+	margin-top: -25px;
+}
+.About {
+	width: auto;
+	float: left;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+.contact {
+	width: auto;
+	float: left;
+	padding-left: 8px;
+}
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.factsdiv {
+	text-align: center;
+	height: 200px;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-bottom: 0;
+	margin: 0 auto;
+	width: 60%;
+}
+.svg-wrapper {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 320px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #0091D8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+	font-family: KOMIKAX;
+	font-size: 40px;
+	line-height: 24px;
+	letter-spacing: 13px;
+	color: #CCCCCC;
+	top: -48px;
+	position: relative;
+	padding-left: 16px;
+	letter-spacing: 10px;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+.suka {
+	font-family: KOMIKAX;
+	color: #0091D8;
+	letter-spacing: 2px;
+}
+.callme {
+	font-size: 24px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 40px;
+}
+.shortline {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #999999;
+	width: 40%;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-bottom: 15px;
+}
+
+.logo {
+	height: 110px;
+	background-image: url(imgs/sukafunlogo.fw.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 50px;
+}
+.pleasewait {
+	color: #FFF;
+}
+</style>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js'></script>
+	
+	<link rel="stylesheet" href="css/queryLoader.css" type="text/css" />
+	<script type='text/javascript' src='js/queryLoader.js'></script>
+
+
+
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+
+		<script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/scrollview.js"></script>      
+<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+
+        <style type="text/css">
+        body,td,th {
+	font-family: Raleway, sans-serif;
+}
+
+.mainskype {
+	height: 100px;
+	width: auto;
+	margin-top: 80px;
+	background-color: #302D2D;	
+}
+.mainfooter {
+	height: 250px;
+	background-color: #FFF;
+}
+.arrowtop {
+	background-image: url(imgs/arrowtop.png);
+	height: 32px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-top: 53px;
+}
+
+        .thanks {
+	width: 50%;
+	margin: 0 auto;
+	color: #333;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+}
+
+        .animBlock1 {  display: inline-block;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: relative;
+  -webkit-transition: all .55s ease-in;
+  -moz-transition: all .55s ease-in;
+  -ms-transition: all .55s ease-in;
+  -o-transition: all .55s ease-in;
+  transition: all .55s ease-in;
+}
+.animBlock1 {left: -20%; }
+.animBlock1 {right: -20%; }
+
+        .arrow50 {
+	width: 65%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #DFDFDF;
+	text-align: center;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-bottom: 50px;
+}
+        .sukafunbold {
+	font-weight: bolder;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	color: #333;
+}
+        .wordbold {
+	font-weight: 700;
+	font-size: large;
+}
+        .comingsoon {
+	height: 82px;
+	background-image: url(imgs/comingsoon.png);
+	width: 100%;
+	max-width: 100%;
+}
+        </style>
+        
+        <script>
+		
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-15536328-1', 'auto');
+  ga('send', 'pageview');
+
+
+</script>
+       <link rel="shortcut icon" type="image/x-icon" href="imgs/sukafunlogo.fw.ico"/> 
+</head>
+<a name=last></a>
+
+
+
+
+<body background="imgs/20140126_203454.png" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<div class="comingsoon"></div>
+
+
+
+
+
+<div class="firstdiv">
+<div class="topbar"></div>
+
+<div class="menu">	<section class="color-1">
+				<nav  class="cl-effect-8">
+				<a href="#" class="skills" onclick="return false;" onmousedown="autoScrollTo('skills');">Skills</a> 
+                  <a href="#" class="About" onclick="return false;" onmousedown="autoScrollTo('about');">About</a> 
+				<a href="#" class="contact" onclick="return false;" onmousedown="autoScrollTo('contact');">Contact</a>
+				</nav>
+			</section>
+
+  </div>
+
+
+<div class="sukafun">
+<div class="logo"></div>
+  
+  <div class="svg-wrapper">
+  <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+    <rect class="shape" height="60" width="320" />
+    <div class="text"><span class="suka">SUKA</span>FUN</span></div>
+  </svg>
+</div>
+  </div>
+  <script>
+		QueryLoader.selectorPreload = "body";
+		QueryLoader.init();
+	</script>
+<div class="notweb"></div>
+</div> <!--FIRST DIV -->
+
+
+<div id="skills" class="seconddiv"><a href="#" onclick="return false;"></a>   
+
+<div class="whatido">WHAT I DO</div>
+  <div class="whatidotext"><span xml:lang="EN-US">I <strong>manage</strong> and <strong>administrate</strong> systems, networks, servers and network devices. With strong customer service skills I  offer day-to-day <strong>support</strong> for end users. I've <strong>worked</strong> for small, mid size and large organizations where I was involved in project work as migrating servers to setting up comms in remote sites, etc. I have fixed hunderds of IT issues for hunderds of users. This experience together with freelance work I've done, allowed me to acquire wide range of skills as a <strong>Systems Engineer</strong>.
+ <br />Also I have "some" experience in web and graphics design as well as VOIP technologies.</span><br />
+  <span xml:lang="EN-US"> Download now my resume to get an overview of my work experience and the technologies I use.</span></div>
+<div class="resume"><a href="Mohamed.Hassan_Resume.pdf" class="blueline">Download My PDF Resume</a></div>
+
+  
+
+<div class="thridblue">
+<div class="arrow"></div>
+  <div class="firstrowimg">
+<table width="90%" border="0" align="center">
+    <td width="46%" align="center" ><img src="imgs/screen.png" width="100" height="72" /></td>
+    <td width="8%">&nbsp;</td>
+    <td width="46%" align="center"><img src="imgs/customerservice.png" width="100" height="94" /></td>
+  </tr>
+   <tr>
+    <td class="whatidotextstyle" style="text-align: center; font size"><p class="iconstext">Systems Administration </p>
+      <div>
+        <p xml:lang="EN-US"><span xml:lang="EN-US">The   idea is to learn and discover more systems. Not necessarily I can master   a single system but I can manage and use several systems to get the job   done. The rest comes from work experience or  internet research. I   always try to stay on top of the latest technology out there</span>.</p>
+      </div>
+      <p><br />
+      </p></td>
+    <td>&nbsp;</td>
+    <td class="whatidotextstyle" style="text-align: center;"><p class="iconstext">Customer Service</p>
+      <div>
+        <p xml:lang="EN-US"><span xml:lang="EN-US">Apart   from fixing servers, computers, etc. I love socializing in and out of   the workplace. It makes great atmosphere at work which will make people   less angry when their computers break down!</span> </p>
+      </div>
+      <p><br />
+      </p></td>
+  </tr>
+    <td height="39">&nbsp;</td>
+    <td>&nbsp;</td>
+    
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="114" align="center"><img src="imgs/search.png" width="100" height="116" /></td>
+    <td>&nbsp;</td>
+    <td align="center"><img src="imgs/multitask.png" width="100" height="66" /></td>
+  </tr>
+  <tr>
+    <td class="whatidotextstyle" style="text-align: center;"><p class="iconstext">Research</p>
+      <p><span xml:lang="EN-US">As research is an important aspect in the Information Technology field, I tend to spend my time to reseach issues if they occur without giving up that easy unless it is critical  and needs to be escalated. I trust Google on </span>resolving my problems.</p></td>
+    <td>&nbsp;</td>
+    <td class="whatidotextstyle" style="text-align: center;"><p class="iconstext">Multitasking</p>
+      <p><span xml:lang="EN-US">Surprisingly   I would prefer to be flat out at work rather than bored with little work to   do. Only on Fridays afternoon I would be working on single task mode! Also prefer   task switching, so I would work on three or four tasks simultaneously   rather than one at a time which works out best for me to save time.  </span></p></td>
+  </tr>
+  </table>
+
+  </div>  </div><!--first row -->
+</div> 	<!--thridblue -->
+
+<div id="about" class="aboutmetrans"><a href="#" onclick="return false;" onmousedown="resetScroller('myheading');"></a>   
+
+
+
+  <div class="aboutmetextdiv" align="center">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="400"><div id="devicesTxt" data-position="left" class="notViewed animBlock floatr"> <span class="aboutmefont">ABOUT ME</span>
+        <div>
+          <div>
+            <p xml:lang="EN-US"><span xml:lang="EN-US">From <span class="wordbold">Egypt</span> originally. I'm currently living in Australia since 2009. </span><br />
+               <br />
+              <span xml:lang="EN-US">I'm outgoing full of life and want to just enjoy life to its fullest with no regrets. </span><span xml:lang="EN-US">I don't tend to plan too far ahead in fear of missing something else. </span> <br />
+              <span xml:lang="EN-US">I   eat <span class="wordbold">chocolate</span>, I mean a lot of chocolate. It's my main source of   happiness, in the other hand my source of sadness is going to gym three   to four days a week just to burn off all the chocolate I ate.</span> <br />
+              <span xml:lang="EN-US"> </span> </p>
+          </div>
+        </div>
+        <div>
+          <p paraeid="{d265a7b5-d4ef-4a2b-8c67-2469d7a652b1}{68}" paraid="855647543" xml:lang="EN-US">I'm a proud husband of a <span class="wordbold">wonderful</span> wife. I'm looking forward to being a dad.</p>
+        </div>
+        <p>&nbsp;</p>
+      </div></td>
+    <td width="250"><img src="imgs/myphoto.png" width="100%" height="400" /></td>
+  </tr>
+  </table>
+
+ 
+  </div>
+  <div class="arrow50" align="center"></div>
+  
+  
+
+</div> 
+
+
+  
+<div class="insidefacts">
+   
+      <div class="factsdiv" align="center">
+
+      <table width="100%" border="0" height="100%"  align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><div class="hs-wrapper">
+					<img src="images/A1.jpg" alt="image01"/>
+					<img src="images/A2.jpg" alt="image02"/>
+					<img src="images/A3.jpg" alt="image03"/>
+					<img src="images/A4.jpg" alt="image04"/>
+					<img src="images/A5.jpg" alt="image05"/>
+					<img src="images/A6.jpg" alt="image06"/>
+					<img src="images/A7.jpg" alt="image07"/>
+					<img src="images/A8.jpg" alt="image08"/>
+				<div class="hs-overlay"></div>
+    </div></td>
+    <td width="2px"></td>
+    <td><div class="hs-wrapper">
+					<img src="images/B1.jpg" alt="image01"/>
+					<img src="images/B2.jpg" alt="image02"/>
+					<img src="images/B3.jpg" alt="image03"/>
+					<img src="images/B4.jpg" alt="image04"/>
+					<img src="images/B5.jpg" alt="image05"/>
+					<img src="images/B6.jpg" alt="image06"/>
+					<img src="images/B7.jpg" alt="image07"/>
+					<img src="images/B8.jpg" alt="image08"/>
+			<div class="hs-overlay"></div>
+    </div></td>
+    <td width="2px"></td>
+    <td><div class="hs-wrapper">
+					<img src="images/C1.jpg" alt="image01"/>
+					<img src="images/C2.jpg" alt="image02"/>
+					<img src="images/C3.jpg" alt="image03"/>
+					<img src="images/C4.jpg" alt="image04"/>
+					<img src="images/C5.jpg" alt="image05"/>
+					<img src="images/C6.jpg" alt="image06"/>
+					<img src="images/C7.jpg" alt="image07"/>
+					<img src="images/C8.jpg" alt="image08"/>
+				<div class="hs-overlay"></div>
+    </div></td>
+    <td width="2px"></td>
+       <td><div class="hs-wrapper">
+					<img src="images/D1.jpg" alt="image01"/>
+					<img src="images/D2.jpg" alt="image02"/>
+					<img src="images/D3.jpg" alt="image03"/>
+					<img src="images/D4.jpg" alt="image04"/>
+					<img src="images/D5.jpg" alt="image05"/>
+					<img src="images/D6.jpg" alt="image06"/>
+					<img src="images/D7.jpg" alt="image07"/>
+					<img src="images/D8.jpg" alt="image08"/>
+				<div class="hs-overlay"></div>
+       </div></td>
+       <td width="2px"></td>
+    <td><div class="hs-wrapper">
+					<img src="images/E1.jpg" alt="image01"/>
+					<img src="images/E2.jpg" alt="image02"/>
+					<img src="images/E3.jpg" alt="image03"/>
+					<img src="images/E4.jpg" alt="image04"/>
+					<img src="images/E5.jpg" alt="image05"/>
+					<img src="images/E6.jpg" alt="image06"/>
+					<img src="images/E7.jpg" alt="image07"/>
+					<img src="images/E8.jpg" alt="image08"/>
+				<div class="hs-overlay"></div>
+    </div></td>
+  </tr>
+</table>
+</div>
+
+    
+	<!--end here radnomfacts -->
+</div>
+
+
+<div id="contact" class="getintouchdiv"><a href="#" onclick="return false;" onmousedown="resetScroller('myheading');"></a> 
+
+
+  <div class="getintouch">GET IN TOUCH</div>
+<div class="getintouchrow2">
+  
+  
+  <table width="100%" border="0" align="center">
+  <tr>
+    <td width="500" align="center"><div class="glympse">
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13538.664454269574!2d115.94078203430175!3d-31.969953577701933!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1535978125327" width="400" height="350" frameborder="0" style="border:0" allowfullscreen></iframe></div></td>
+   
+    <td width="490" align="center"><div class="ilivehere"><span style="background-color: #FFFF00">Find me,<br />
+    i'm sharing my <br />
+    location as i go.<br />
+    I live in Perth.
+        </span>
+        	
+
+
+        
+        </div></td>
+  </tr>
+</table>
+
+  
+
+  
+</div> 
+
+
+ 
+ 
+</div> 
+
+<div class="mainskype">
+  <div class="callme"></div>
+  
+  
+  <div class="skypediv" align="center"><script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_sukafun_1">
+  <span class="skype-button bubble " data-contact-id="sukafun"></span>
+<script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script>
+</div>
+
+<a href='#last'>
+<div class="arrowtop"></div></a>
+</div>
+
+</div>
+<div class="mainfooter">
+  <div class="lastdiv">
+  
+  
+  
+   <table width="auto" border="0" align="center">
+  <tr>
+    <td><a href="https://www.facebook.com/sukafun" target="_blank"><div class="lastdivfb"></div></a></td>
+    <td><a href="https://au.linkedin.com/in/sukafun/" target="_blank"><div class="lastdivins"></div></a></td>
+    <td><a href="http://sukafun.com/contact" target="_blank"><div class="sukafunlibrary"></div></a></td>
+    <td> <a href="http://instagram.com/sukafun" target="_blank"><div class="lastdivin"></div></a></td>
+    <td><a href="mailto:mo@sukafun.com?Subject=MESSAGE%FROM%SUKAFUN" target="_top"><div class="lastdivhot"></div></a></td>
+  </tr>
+</table>
+
+    
+    
+    
+  </div> 
+    
+<div class="shortline" align="center"></div>
+
+<div class="lastdivtext" align="center">  Coded/Designed/Hosted. <span class="sukafunbold">SUKAFUN</span> ©2018</div>
+<div class="thanks" align="center"> </div>
+
+
+
+
+</div>
+<div class="topbar2"></div>
+
+
+</body>
+</html>
